@@ -14,7 +14,7 @@ class TestAddGroup(unittest.TestCase):
     def test_add_group(self):
         wd = self.wd
         self.open_home_page(wd)
-        self.login(wd, "admin", "secret")
+        self.login(wd, username="admin", password="secret")
         self.open_groups_page(wd)
         self.create_gruop(wd, Group(name="qwertrvf", header="cfserfersc", footer="wefawerfaee"))
         self.return_to_groups_page(wd)
@@ -23,7 +23,7 @@ class TestAddGroup(unittest.TestCase):
     def test_add_empty_group(self):
         wd = self.wd
         self.open_home_page(wd)
-        self.login(wd, "admin", "secret")
+        self.login(wd, username="admin", password="secret")
         self.open_groups_page(wd)
         self.create_gruop(wd, Group(name="", header="", footer=""))
         self.return_to_groups_page(wd)
