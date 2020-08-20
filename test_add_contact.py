@@ -103,7 +103,7 @@ class TestAddContact(unittest.TestCase):
         wd.find_element_by_name("ayear").send_keys("2020")
         wd.find_element_by_name("new_group").click()
         Select(wd.find_element_by_name("new_group")).select_by_visible_text("qwertrvf")
-        wd.find_element_by_xpath("(//option[@value='8'])[3]").click()
+        #wd.find_element_by_xpath("(//option[@value='8'])[3]").click()
         wd.find_element_by_name("address2").click()
         wd.find_element_by_name("address2").clear()
         wd.find_element_by_name("address2").send_keys(contact.address2)
