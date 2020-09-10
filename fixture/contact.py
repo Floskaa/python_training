@@ -70,7 +70,7 @@ class ContactHelper:
 
         wd.find_element_by_name("phone2").send_keys(contact.phone2)
 
-        wd.find_element_by_name("notes").send_keys(contact.note)
+        wd.find_element_by_name("notes").send_keys(contact.notes)
         # submit add new
         wd.find_element_by_xpath("(//input[@name='submit'])[2]").click()
 
