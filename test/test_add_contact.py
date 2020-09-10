@@ -10,4 +10,4 @@ def test_add_contact(app):
                                email="sofi@gmail.com",
                                email2="sofi2@gmail.ru", email3="sofi3@mail.ru", homepage="sofi.net",
                                address2="Pervaya str 4",
-                               phone2="1243", note="test contact"))
+                               phone2="1243", notes="test contact"))
