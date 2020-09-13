@@ -74,14 +74,15 @@ class ContactHelper:
         # submit add new
         wd.find_element_by_xpath("(//input[@name='submit'])[2]").click()
 
-    def return_to_home_page(self):
+    def open_home_page(self):
         wd = self.app.wd
-        self.return_to_home_page()
-        wd.find_element_by_link_text("home page").click()
+        if not (wd.current_url.endswith("/addressbook/")
+                and len(wd.find_element_by_xpath("//input[@value='Send e-Mail']")) > 0):
+            wd.find_element_by_link_text("home page").click()
 
     def edit_first_contact(self, new_contact_data):
         wd = self.app.wd
-        wd.find_element_by_link_text("home").click()
+        self.open_home_page()
         # select first contact
         wd.find_element_by_xpath("//img[@alt='Edit']").click()
         self.fill_contact_form(new_contact_data)
@@ -132,7 +133,7 @@ class ContactHelper:
 
     def delete_first_contact(self):
         wd = self.app.wd
-        wd.find_element_by_link_text("home").click()
+        self.open_home_page()
         # select first contact
         self.select_first_contact()
         # submit deletion
@@ -145,7 +146,7 @@ class ContactHelper:
 
     def modify_first_contact(self, new_contact_data):
         wd = self.app.wd
-        wd.find_element_by_link_text("home").click()
+        self.open_home_page()
         self.select_first_contact()
         # open modification form
         wd.find_element_by_xpath("//img[@alt='Edit']").click()
