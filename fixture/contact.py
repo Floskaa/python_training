@@ -9,6 +9,7 @@ class ContactHelper:
 
     def create(self, contact):
         wd = self.app.wd
+        self.open_home_page()
         # click add new
         wd.find_element_by_link_text("add new").click()
         # fill form
@@ -140,6 +141,7 @@ class ContactHelper:
         # submit deletion
         wd.find_element_by_xpath("(//input[@value='Delete'])").click()
         wd.switch_to_alert().accept()
+        wd.find_element_by_css_selector("div.msgbox")
 
     def select_first_contact(self):
         wd = self.app.wd
@@ -180,9 +182,10 @@ class ContactHelper:
         wd = self.app.wd
         self.open_home_page()
         contacts = []
-        wd.find_elements_by_name("entry")
-        for elements in wd.find_elements_by_name("entry"):
-            cells = elements.find_elements_by_tag_name("td")
-            id = elements.find_element_by_name("selected[]").get_attribute("value")
-            contacts.append(Contact(lastname=cells[1], firstname=cells[2], id=id))
+        for element in wd.find_elements_by_xpath("//tr[contains(@name, 'entry')]"):
+            cells = element.find_elements_by_tag_name("td")
+            lastname = cells[1].text
+            firstname = cells[2].text
+            id = element.find_element_by_name("selected[]").get_attribute("value")
+            contacts.append(Contact(lastname=lastname, firstname=firstname, id=id))
         return contacts
