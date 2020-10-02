@@ -67,7 +67,6 @@ class ContactHelper:
         wd.find_element_by_name("update").click()
 
     def fill_contact_form(self, contact):
-        wd = self.app.wd
         self.change_field_value("firstname", contact.firstname)
         self.change_field_value("middlename", contact.middlename)
         self.change_field_value("lastname", contact.lastname)

@@ -9,9 +9,11 @@ class Group:
         self.footer = footer
         self.id = id
 
+    # representation - стандартная функция - определяет как будет выглядеть объект при выводе на консоль
     def __repr__(self):
         return "%s:%s" % (self.id, self.name)
 
+    # equels - функция принимающая в качестве второго параметра обьект с которым мы должны сравнить текущий обьект self
     def __eq__(self, other):
         return (self.id is None or other.id is None or self.id == other.id) and self.name == other.name
 
