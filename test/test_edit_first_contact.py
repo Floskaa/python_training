@@ -14,6 +14,7 @@ def test_edit_contact(app):
                                email2="andru2@gmail.ru", email3="andru3@mail.ru", homepage="andru.net",
                                address2="Vtoraya str 34",
                                phone2="7(904)8888888", notes="test edit contact")
+    contact.id = old_contacts[0].id
     app.contact.edit_first_contact(contact)
     new_contacts = app.contact.get_contact_list()
     assert len(old_contacts) == len(new_contacts)
