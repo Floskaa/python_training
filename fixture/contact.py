@@ -193,9 +193,10 @@ class ContactHelper:
         phone2 = re.search("P: (.*)", text).group(1)
         firstname = wd.find_element_by_name("firstname").get_attribute("value")
         lastname = wd.find_element_by_name("lastname").get_attribute("value")
-        email = re.search("/n: (.*)", text).group(1)
+        address = wd.find_element_by_name("address").get_attribute("value")
+        email = wd.find_element_by_name("email").get_attribute("value")
         email2 = wd.find_element_by_name("email2").get_attribute("value")
         email3 = wd.find_element_by_name("email3").get_attribute("value")
 
         return Contact(name=firstname, lastname=lastname, home=home, work=work, mobile=mobile, phone2=phone2,
-                       email=email, email2=email2, email3=email3)
+                       email=email, email2=email2, email3=email3, address=address)
