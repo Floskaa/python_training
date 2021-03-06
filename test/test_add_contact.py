@@ -3,7 +3,8 @@ from model.contact import Contact
 
 
 def test_add_contact(app):
-    app.session.login(username="admin", password="secret")
+    if app.contact.count() == 0:
+        app.contact.create(Contact(firstname="test"))
     app.contact.create(Contact(firstname="Sofia", middlename="Ivanovna", lastname="Petrova", nickname="Sofi",
                                photo="C:\\Devel\\Andru.jpg", title="prosto test", company="Romashka",
                                address="Kirova str 5", home="1333434343",
@@ -12,5 +13,4 @@ def test_add_contact(app):
                                bday="19", bmonth="April", byear="1989", aday="6", amonth="May", ayear="1999",
                                address2="Pervaya str 4",
                                phone2="1243", note="test contact"))
-    app.session.logout()
 
