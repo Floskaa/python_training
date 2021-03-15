@@ -1,3 +1,4 @@
+from selenium.webdriver.support.ui import Select
 from model.contact import Contact
 import re
 
@@ -9,13 +10,12 @@ class ContactHelper:
 
     def create(self, contact):
         wd = self.app.wd
+        self.open_home_page()
         # click add new
         wd.find_element_by_link_text("add new").click()
         # fill form
         self.fill_contact_form(contact)
-        # submit add new
         wd.find_element_by_xpath("(//input[@name='submit'])[2]").click()
-        self.app.open_home_page()
         self.contact_cache = None
 
     def open_home_page(self):
@@ -24,24 +24,23 @@ class ContactHelper:
                 and len(wd.find_elements_by_xpath("//input[@value='Send e-Mail']")) > 0):
             wd.find_element_by_link_text("home").click()
 
-    def edit_first_contact(self, new_contact_data):
+    def edit_first_contact(self, contact):
         wd = self.app.wd
-        self.app.open_home_page()
+        self.open_home_page()
         # select first contact
         wd.find_element_by_xpath("//img[@alt='Edit']").click()
-        self.fill_contact_form(new_contact_data)
+        self.fill_contact_form(contact)
         # submit edition
         wd.find_element_by_name("update").click()
         self.contact_cache = None
 
     def fill_contact_form(self, contact):
+        wd = self.app.wd
         self.change_field_value("firstname", contact.firstname)
         self.change_field_value("middlename", contact.middlename)
         self.change_field_value("lastname", contact.lastname)
         self.change_field_value("nickname", contact.nickname)
-        # wd.find_element_by_name("photo").click()
-        # wd.find_element_by_name("photo").clear()
-        # wd.find_element_by_name("photo").send_keys("C:\\Devel\\Andru.jpg")
+        self.change_field_value("photo", contact.photo)
         self.change_field_value("title", contact.title)
         self.change_field_value("company", contact.company)
         self.change_field_value("address", contact.address)
@@ -53,26 +52,22 @@ class ContactHelper:
         self.change_field_value("email2", contact.email2)
         self.change_field_value("email3", contact.email3)
         self.change_field_value("homepage", contact.homepage)
-        # self.change_calendar_value("bday", contact.bday)
-        # self.change_calendar_value("bmonth", contact.bmonth)
-        # self.change_field_value("byear", contact.byear)
-        # self.change_calendar_value("aday", contact.aday)
-        # self.change_calendar_value("amonth", contact.amonth)
-        # self.change_field_value("ayear", contact.ayear)
+
+        self.change_field_value_date("bday", contact.bday)
+        self.change_field_value_date("bmonth", contact.bmonth)
+        self.change_field_value("byear", contact.byear)
+
+        self.change_field_value_date("aday", contact.aday)
+        self.change_field_value_date("amonth", contact.amonth)
+        self.change_field_value("ayear", contact.ayear)
+
         self.change_field_value("address2", contact.address2)
         self.change_field_value("phone2", contact.phone2)
-        self.change_field_value("notes", contact.notes)
-
-    # def change_calendar_value(self, par, text):
-    #     wd = self.app.wd
-    #     if text is not None:
-    #         wd.find_element_by_name(par).click()
-    #         Select(wd.find_element_by_name(par)).select_by_visible_text(text)
+        self.change_field_value("notes", contact.note)
 
     def delete_contact_by_index(self, index):
         wd = self.app.wd
-        self.app.open_home_page()
-        # select first contact
+        self.open_home_page()
         self.select_contact_by_index(index)
         # submit deletion
         wd.find_element_by_xpath("(//input[@value='Delete'])").click()
@@ -93,11 +88,10 @@ class ContactHelper:
 
     def modify_contact_by_index(self, index, new_contact_data):
         wd = self.app.wd
-        self.app.open_home_page()
+        self.open_home_page()
         self.select_contact_by_index(index)
         # open modification form
         wd.find_elements_by_xpath("//img[@alt='Edit']")[index].click()
-        # fill form
         self.fill_contact_form(new_contact_data)
         # submit edition
         wd.find_element_by_name("update").click()
@@ -106,20 +100,17 @@ class ContactHelper:
     def modify_first_contact(self):
         self.select_contact_by_index(0)
 
-    def create_for_edit_contact(self, new_contact_data):
-        wd = self.app.wd
-        wd.find_element_by_link_text("add new").click()
-        # fill form
-        self.fill_contact_form(new_contact_data)
-        # submit add new
-        wd.find_element_by_xpath("(//input[@name='submit'])[2]").click()
-
     def change_field_value(self, field_name, text):
         wd = self.app.wd
         if text is not None:
-            wd.find_element_by_name(field_name).click()
             wd.find_element_by_name(field_name).clear()
             wd.find_element_by_name(field_name).send_keys(text)
+
+    def change_field_value_date(self, field_date, text):
+        wd = self.app.wd
+        if text is not None:
+            selector = Select(wd.find_element_by_name(field_date))
+            selector.select_by_visible_text(text)
 
     def count(self):
         wd = self.app.wd
@@ -133,16 +124,16 @@ class ContactHelper:
             wd = self.app.wd
             self.app.open_home_page()
             self.contact_cache = []
-            for row in wd.find_elements_by_xpath("//tr[contains(@name, 'entry')]"):
+            for row in wd.find_elements_by_name("entry"):
                 cells = row.find_elements_by_tag_name("td")
                 id = cells[0].find_element_by_tag_name("input").get_attribute("value")
-                firstname = cells[1].text
-                lastname = cells[2].text
-                all_address = cells[3].text
-                all_emails = cells[4].text
+                firstname = cells[2].text
+                lastname = cells[1].text
                 all_phones = cells[5].text
-                self.contact_cache.append(Contact(firstname=firstname, lastname=lastname, id=id, all_phones=all_phones,
-                                                  all_emails=all_emails, all_address=all_address))
+                all_emails = cells[4].text
+                all_address = cells[3].text
+                self.contact_cache.append(Contact(firstname=firstname, lastname=lastname, id=id,
+                                                  all_phones=all_phones, all_emails=all_emails, all_address=all_address))
         return list(self.contact_cache)
 
     # открывает форму редактирование index контакта
@@ -170,8 +161,8 @@ class ContactHelper:
         id = wd.find_element_by_name("id").get_attribute("value")
 
         home = wd.find_element_by_name("home").get_attribute("value")
-        work = wd.find_element_by_name("work").get_attribute("value")
         mobile = wd.find_element_by_name("mobile").get_attribute("value")
+        work = wd.find_element_by_name("work").get_attribute("value")
         phone2 = wd.find_element_by_name("phone2").get_attribute("value")
 
         address = wd.find_element_by_name("address").get_attribute("value")
@@ -179,8 +170,8 @@ class ContactHelper:
         email2 = wd.find_element_by_name("email2").get_attribute("value")
         email3 = wd.find_element_by_name("email3").get_attribute("value")
 
-        return Contact(firstname=firstname, lastname=lastname, id=id, home=home, work=work,
-                       mobile=mobile, phone2=phone2,
+        return Contact(firstname=firstname, lastname=lastname, id=id, home=home, mobile=mobile,
+                       work=work, phone2=phone2,
                        address=address, email=email, email2=email2, email3=email3)
 
     def get_contact_from_view_page(self, index):
@@ -188,8 +179,8 @@ class ContactHelper:
         self.open_contact_view_by_index(index)
         text = wd.find_element_by_id("content").text
         home = re.search("H: (.*)", text).group(1)
-        work = re.search("W: (.*)", text).group(1)
         mobile = re.search("M: (.*)", text).group(1)
+        work = re.search("W: (.*)", text).group(1)
         phone2 = re.search("P: (.*)", text).group(1)
         firstname = wd.find_element_by_name("firstname").get_attribute("value")
         lastname = wd.find_element_by_name("lastname").get_attribute("value")
@@ -198,5 +189,5 @@ class ContactHelper:
         email2 = wd.find_element_by_name("email2").get_attribute("value")
         email3 = wd.find_element_by_name("email3").get_attribute("value")
 
-        return Contact(firstname=firstname, lastname=lastname, home=home, work=work, mobile=mobile, phone2=phone2,
+        return Contact(firstname=firstname, lastname=lastname, home=home, mobile=mobile, work=work,  phone2=phone2,
                        email=email, email2=email2, email3=email3, address=address)

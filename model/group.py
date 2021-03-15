@@ -11,7 +11,7 @@ class Group:
 
     # representation - стандартная функция - определяет как будет выглядеть объект при выводе на консоль
     def __repr__(self):
-        return "%s:%s" % (self.id, self.name)
+        return "%s:%s;%s;%s" % (self.id, self.name, self.header, self.footer)
 
     # equels - функция принимающая в качестве второго параметра обьект с которым мы должны сравнить текущий обьект self
     def __eq__(self, other):
