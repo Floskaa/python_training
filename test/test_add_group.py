@@ -5,7 +5,7 @@ from data.groups import testdata
 # from data.add_group import constant as testdata
 
 
-# @pytest.mark.parametrize("group", testdata, ids=[repr(x) for x in testdata])
+@pytest.mark.parametrize("group", testdata, ids=[repr(x) for x in testdata])
 def test_add_group(app, group):
     old_groups = app.group.get_group_list()
     app.group.create(group)
