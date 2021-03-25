@@ -1,13 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="33a3b308-de99-4858-8a92-a454bd67a8bd" name="Default Changelist" comment="add test_group_list">
+    <list default="true" id="33a3b308-de99-4858-8a92-a454bd67a8bd" name="Default Changelist" comment="add test_add_group_db and test_delete_some_group_db">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/groups.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/groups.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fixture/db.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/db.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fixture/group.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/group.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_add_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_add_group.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_db_matches_ui.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_db_matches_ui.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/conftest.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/test_del_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_del_group.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -46,7 +42,7 @@
       <recent name="C:\Devel\python_training\data" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.pytest for test_del_group.test_delete_some_group">
+  <component name="RunManager" selected="Python tests.pytest for test_del_group.test_delete_some_group_db">
     <configuration name="group" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="python_training" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -143,7 +139,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_parameters" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;--check_ui&quot;" />
       <option name="_new_target" value="&quot;test_del_group.test_delete_some_group_db&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
@@ -175,8 +171,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.pytest for test_del_group.test_delete_some_group" />
         <item itemvalue="Python tests.pytest for test_del_group.test_delete_some_group_db" />
+        <item itemvalue="Python tests.pytest for test_del_group.test_delete_some_group" />
         <item itemvalue="Python tests.pytest for test_add_group.test_add_group_db" />
         <item itemvalue="Python tests.pytest for test_add_group.test_add_group" />
         <item itemvalue="Python tests.pytest for test_db_matches_ui.test_time_group_list" />
@@ -241,7 +237,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616681912576</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="add test_add_group_db and test_delete_some_group_db">
+      <created>1616685083115</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1616685083115</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -284,7 +287,8 @@
     <MESSAGE value="17. add generator for test groups in json format" />
     <MESSAGE value="18. add generator for test groups in json format" />
     <MESSAGE value="add test_group_list" />
-    <option name="LAST_COMMIT_MESSAGE" value="add test_group_list" />
+    <MESSAGE value="add test_add_group_db and test_delete_some_group_db" />
+    <option name="LAST_COMMIT_MESSAGE" value="add test_add_group_db and test_delete_some_group_db" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
