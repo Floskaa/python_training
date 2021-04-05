@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="33a3b308-de99-4858-8a92-a454bd67a8bd" name="Default Changelist" comment="20. edit tests add, del, modify groups and contacts with db check, add check_ui option">
-      <change afterPath="$PROJECT_DIR$/test/test_add_contact_in_group.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/test_del_contact_from_group.py" afterDir="false" />
+    <list default="true" id="33a3b308-de99-4858-8a92-a454bd67a8bd" name="Default Changelist" comment="22. add tests: test_del_contact_from_group and test_add_contact_in_group">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fixture/contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/contact.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fixture/group.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/group.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fixture/orm.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/orm.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_add_contact_in_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_add_contact_in_group.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_phones.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_phones.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +43,7 @@
       <recent name="C:\Devel\python_training\data" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.pytest for test_del_contact_from_group.test_del_contact_from_group">
+  <component name="RunManager" selected="Python tests.pytest for test_phones.test_phones_on_home_page_db">
     <configuration name="check_db_connection" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="python_training" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -136,7 +134,7 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest in test_del_contact_from_group.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest for test_phones.test_phones_on_home_page_db" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="python_training" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -148,8 +146,8 @@
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_parameters" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/test/test_del_contact_from_group.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <option name="_new_target" value="&quot;test_phones.test_phones_on_home_page_db&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <configuration name="pytest in test_del_group.py" type="tests" factoryName="py.test" nameIsGenerated="true">
@@ -172,18 +170,18 @@
       <item itemvalue="Python.group" />
       <item itemvalue="Python tests.pytest in test_del_group.py" />
       <item itemvalue="Python tests.pytest for test_add_contact_in_group.test_add_contact_in_group" />
-      <item itemvalue="Python tests.pytest in test_del_contact_from_group.py" />
       <item itemvalue="Python tests.pytest for test_del_contact_from_group.test_del_contact_from_group" />
       <item itemvalue="Python.check_db_connection" />
       <item itemvalue="Python tests.pytest for test_del_contact_from_group.test_del_contact_from_grup" />
+      <item itemvalue="Python tests.pytest for test_phones.test_phones_on_home_page_db" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.pytest for test_phones.test_phones_on_home_page_db" />
         <item itemvalue="Python tests.pytest for test_del_contact_from_group.test_del_contact_from_group" />
         <item itemvalue="Python tests.pytest for test_add_contact_in_group.test_add_contact_in_group" />
         <item itemvalue="Python tests.pytest for test_del_contact_from_group.test_del_contact_from_grup" />
         <item itemvalue="Python.check_db_connection" />
-        <item itemvalue="Python tests.pytest in test_del_contact_from_group.py" />
       </list>
     </recent_temporary>
   </component>
@@ -280,7 +278,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617619500905</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="22. add tests: test_del_contact_from_group and test_add_contact_in_group">
+      <created>1617629056510</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1617629056510</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -328,7 +333,8 @@
     <MESSAGE value="add def get_contact_list" />
     <MESSAGE value="add ORM" />
     <MESSAGE value="20. edit tests add, del, modify groups and contacts with db check, add check_ui option" />
-    <option name="LAST_COMMIT_MESSAGE" value="20. edit tests add, del, modify groups and contacts with db check, add check_ui option" />
+    <MESSAGE value="22. add tests: test_del_contact_from_group and test_add_contact_in_group" />
+    <option name="LAST_COMMIT_MESSAGE" value="22. add tests: test_del_contact_from_group and test_add_contact_in_group" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -345,7 +351,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/test/test_del_contact_from_group.py</url>
-          <line>13</line>
+          <line>14</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>

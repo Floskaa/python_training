@@ -2,19 +2,23 @@ from model.contact import Contact
 from model.group import Group
 from random import randrange
 from fixture.orm import ORMFixture
+import random
 
 
 orm = ORMFixture(host="127.0.0.1", name="addressbook", user="root", password="")
 
 
 def test_add_contact_in_group(app, db):
+    contacts = db.get_contact_list()
+    groups = db.get_group_list()
+    group = random.choice(groups)
     if len(db.get_contact_list()) == 0:
         app.contact(Contact(firstname="test"))
     if len(orm.get_group_list()) == 0:
         app.group.create(Group(name="test"))
 
-    groups = db.get_group_list()
-    contacts = db.get_contact_list()
+    if len(orm.get_contacts_not_in_group(group)) == 0:
+        app.contact.create(Contact(firstname="test"))
 
     while True:
         contact_index = randrange(len(contacts))
