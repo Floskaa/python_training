@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="33a3b308-de99-4858-8a92-a454bd67a8bd" name="Default Changelist" comment="22. add tests: test_del_contact_from_group and test_add_contact_in_group">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fixture/group.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/group.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_add_contact_in_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_add_contact_in_group.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/test_phones.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_phones.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -21,7 +19,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="ProblemsViewState">
     <option name="selectedIndex" value="1" />
@@ -43,28 +40,7 @@
       <recent name="C:\Devel\python_training\data" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.pytest for test_phones.test_phones_on_home_page_db">
-    <configuration name="check_db_connection" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="python_training" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/check_db_connection.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python tests.pytest for test_phones.test_info_on_home_page_db">
     <configuration name="group" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="python_training" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -118,7 +94,7 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest for test_del_contact_from_group.test_del_contact_from_grup" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest for test_phones.test_info_on_home_page_db" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="python_training" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -130,7 +106,23 @@
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_parameters" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_del_contact_from_group.test_del_contact_from_grup&quot;" />
+      <option name="_new_target" value="&quot;test_phones.test_info_on_home_page_db&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest for test_phones.test_phones_on_home_page" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="python_training" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_phones.test_phones_on_home_page&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -171,17 +163,17 @@
       <item itemvalue="Python tests.pytest in test_del_group.py" />
       <item itemvalue="Python tests.pytest for test_add_contact_in_group.test_add_contact_in_group" />
       <item itemvalue="Python tests.pytest for test_del_contact_from_group.test_del_contact_from_group" />
-      <item itemvalue="Python.check_db_connection" />
-      <item itemvalue="Python tests.pytest for test_del_contact_from_group.test_del_contact_from_grup" />
       <item itemvalue="Python tests.pytest for test_phones.test_phones_on_home_page_db" />
+      <item itemvalue="Python tests.pytest for test_phones.test_phones_on_home_page" />
+      <item itemvalue="Python tests.pytest for test_phones.test_info_on_home_page_db" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.pytest for test_phones.test_info_on_home_page_db" />
         <item itemvalue="Python tests.pytest for test_phones.test_phones_on_home_page_db" />
+        <item itemvalue="Python tests.pytest for test_phones.test_phones_on_home_page" />
         <item itemvalue="Python tests.pytest for test_del_contact_from_group.test_del_contact_from_group" />
         <item itemvalue="Python tests.pytest for test_add_contact_in_group.test_add_contact_in_group" />
-        <item itemvalue="Python tests.pytest for test_del_contact_from_group.test_del_contact_from_grup" />
-        <item itemvalue="Python.check_db_connection" />
       </list>
     </recent_temporary>
   </component>
@@ -285,7 +277,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617629056510</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="22. add tests: test_del_contact_from_group and test_add_contact_in_group">
+      <created>1617630768828</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1617630768828</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
