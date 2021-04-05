@@ -133,3 +133,8 @@ class GroupHelper:
                 id = element.find_element_by_name("selected[]").get_attribute("value")
                 self.group_cache.append(Group(name=text, id=id))
         return list(self.group_cache)
+
+    def check_group_existence(self):
+        wd = self.app.wd
+        if self.count() == 0:
+            self.create(Group(name="test"))
