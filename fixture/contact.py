@@ -1,6 +1,10 @@
 from selenium.webdriver.support.ui import Select
 from model.contact import Contact
+from model.group import Group
 import re
+import random
+from fixture import db
+from fixture.orm import ORMFixture
 
 
 class ContactHelper:
@@ -292,3 +296,27 @@ class ContactHelper:
 
         return Contact(firstname=firstname, lastname=lastname, home=home, mobile=mobile, work=work,  phone2=phone2,
                        email=email, email2=email2, email3=email3, address=address)
+
+    def del_contact_from_group_by_id(self, contact_id, group_id):
+        wd = self.app.wd
+        self.app.open_home_page()
+        wd.find_element_by_xpath("//option[@value='" + str(group_id) + "']").click()
+        self.select_contact_by_id(contact_id)
+        wd.find_element_by_name("remove").click()
+        wd.find_element_by_link_text("home").click()
+
+    def add_contact_to_group(self, contact_id, group_id):
+        wd = self.app.wd
+        self.select_contact_by_id(contact_id)
+        wd.find_element_by_name("to_group").click()
+        Select(wd.find_element_by_name("to_group")).select_by_value(group_id)
+        wd.find_element_by_name("add").click()
+        self.app.open_home_page()
+
+
+    def del_contact_from_group(self, contact_id, group_id):
+        wd = self.app.wd
+        wd.find_element_by_name("group").click()
+        Select(wd.find_element_by_name("group")).select_by_value(group_id)
+        self.select_contact_by_id(contact_id)
+        wd.find_element_by_name("remove").click()
