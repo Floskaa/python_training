@@ -8,7 +8,7 @@ import random
 # orm = ORMFixture(host="127.0.0.1", name="addressbook", user="root", password="")
 
 
-def test_add_contact_in_group(app, orm,  db):
+def test_add_contact_in_group(app, orm, db):
     contacts = db.get_contact_list()
     groups = db.get_group_list()
     group = random.choice(groups)

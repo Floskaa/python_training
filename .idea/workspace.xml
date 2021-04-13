@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="33a3b308-de99-4858-8a92-a454bd67a8bd" name="Default Changelist" comment="fix">
+    <list default="true" id="33a3b308-de99-4858-8a92-a454bd67a8bd" name="Default Changelist" comment="28. Add Screenshots">
       <change afterPath="$PROJECT_DIR$/bdd/group_scenarios.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/bdd/group_steps.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/bdd/groups.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +43,7 @@
       <recent name="C:\Devel\python_training\data" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.pytest in test_del_contact_from_group.py">
+  <component name="RunManager" selected="Python tests.pytest in test_add_contact_in_group.py">
     <configuration name="group" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="python_training" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -82,7 +81,7 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest for test_phones.test_phones_on_contact_view_page" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest in test" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="python_training" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -94,11 +93,11 @@
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_parameters" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_phones.test_phones_on_contact_view_page&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/test&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest for test_phones.test_phones_on_home_page" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest in test_add_contact_in_group.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="python_training" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -110,8 +109,8 @@
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_parameters" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_phones.test_phones_on_home_page&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/test/test_add_contact_in_group.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
     <configuration name="pytest in test_del_contact_from_group.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
@@ -165,19 +164,19 @@
     <list>
       <item itemvalue="Python.group" />
       <item itemvalue="Python tests.pytest in test_del_group.py" />
-      <item itemvalue="Python tests.pytest for test_phones.test_phones_on_home_page" />
-      <item itemvalue="Python tests.pytest for test_phones.test_phones_on_contact_view_page" />
       <item itemvalue="Python tests.pytest for test_phones.test_info_on_home_page_db" />
       <item itemvalue="Python tests.pytest in test_phones.py" />
       <item itemvalue="Python tests.pytest in test_del_contact_from_group.py" />
+      <item itemvalue="Python tests.pytest in test" />
+      <item itemvalue="Python tests.pytest in test_add_contact_in_group.py" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.pytest in test_add_contact_in_group.py" />
+        <item itemvalue="Python tests.pytest in test" />
         <item itemvalue="Python tests.pytest in test_del_contact_from_group.py" />
         <item itemvalue="Python tests.pytest in test_phones.py" />
         <item itemvalue="Python tests.pytest for test_phones.test_info_on_home_page_db" />
-        <item itemvalue="Python tests.pytest for test_phones.test_phones_on_contact_view_page" />
-        <item itemvalue="Python tests.pytest for test_phones.test_phones_on_home_page" />
       </list>
     </recent_temporary>
   </component>
@@ -344,7 +343,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618334793629</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="28. Add Screenshots">
+      <created>1618335443455</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1618335443455</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -400,7 +406,8 @@
     <MESSAGE value="update add fixture ORM" />
     <MESSAGE value="update" />
     <MESSAGE value="fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix" />
+    <MESSAGE value="28. Add Screenshots" />
+    <option name="LAST_COMMIT_MESSAGE" value="28. Add Screenshots" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
