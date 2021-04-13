@@ -1,14 +1,14 @@
 from model.contact import Contact
 from model.group import Group
 from random import randrange
-from fixture.orm import ORMFixture
+# from fixture.orm import ORMFixture
 import random
 
 
-orm = ORMFixture(host="127.0.0.1", name="addressbook", user="root", password="")
+# orm = ORMFixture(host="127.0.0.1", name="addressbook", user="root", password="")
 
 
-def test_add_contact_in_group(app, db):
+def test_add_contact_in_group(app, orm,  db):
     contacts = db.get_contact_list()
     groups = db.get_group_list()
     group = random.choice(groups)

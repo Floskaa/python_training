@@ -1,12 +1,12 @@
 from model.contact import Contact
 from model.group import Group
 import random
-from fixture.orm import ORMFixture
+# from fixture.orm import ORMFixture
+#
+# orm = ORMFixture(host="localhost", name="addressbook", user="root", password="")
 
-orm = ORMFixture(host="localhost", name="addressbook", user="root", password="")
 
-
-def test_del_contact_from_group(app, db):
+def test_del_contact_from_group(app, orm,  db):
     if len(db.get_group_list()) == 0:
         app.group.create(Group(name="test"))
     if len(db.get_contact_list()) == 0:
