@@ -1,19 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="33a3b308-de99-4858-8a92-a454bd67a8bd" name="Default Changelist" comment="generate new json">
+    <list default="true" id="33a3b308-de99-4858-8a92-a454bd67a8bd" name="Default Changelist" comment="update add fixture ORM">
       <change afterPath="$PROJECT_DIR$/bdd/group_scenarios.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/bdd/group_steps.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/bdd/groups.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/conftest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/contacts.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/contacts.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test-phones.py" beforeDir="false" afterPath="$PROJECT_DIR$/old_tests/test-phones.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_add_contact_in_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/old_tests/test_add_contact_in_group.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_edit_first_contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/old_tests/test_edit_first_contact.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_edit_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/old_tests/test_edit_group.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_info.py" beforeDir="false" afterPath="$PROJECT_DIR$/old_tests/test_info.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_phones.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_phones.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_tests/test_add_contact_in_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_add_contact_in_group.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_add_contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_add_contact.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_add_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_add_group.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_db_matches_ui.py" beforeDir="false" afterPath="$PROJECT_DIR$/old_tests/test_db_matches_ui.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +43,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Devel\python_training\test" />
       <recent name="C:\Devel\python_training\old_tests" />
       <recent name="C:\Devel\python_training\data" />
     </key>
@@ -149,7 +146,7 @@
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_parameters" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/old_tests/test_add_contact_in_group.py&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/test/test_add_contact_in_group.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
@@ -323,7 +320,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618320635787</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="update add fixture ORM">
+      <created>1618332786858</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1618332786858</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -376,7 +380,8 @@
     <MESSAGE value="21. add requirements.txt" />
     <MESSAGE value="add requirements.txt" />
     <MESSAGE value="generate new json" />
-    <option name="LAST_COMMIT_MESSAGE" value="generate new json" />
+    <MESSAGE value="update add fixture ORM" />
+    <option name="LAST_COMMIT_MESSAGE" value="update add fixture ORM" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -387,7 +392,7 @@
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/test/test_db_matches_ui.py</url>
+          <url>file://$PROJECT_DIR$/old_tests/test_db_matches_ui.py</url>
           <line>9</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
@@ -395,6 +400,11 @@
           <url>file://$PROJECT_DIR$/test/test_del_contact_from_group.py</url>
           <line>14</line>
           <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/test/test_phones.py</url>
+          <line>10</line>
+          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
