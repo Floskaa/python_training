@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="33a3b308-de99-4858-8a92-a454bd67a8bd" name="Default Changelist" comment="21. add requirements.txt">
+    <list default="true" id="33a3b308-de99-4858-8a92-a454bd67a8bd" name="Default Changelist" comment="add requirements.txt">
       <change afterPath="$PROJECT_DIR$/bdd/group_scenarios.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/bdd/group_steps.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/bdd/groups.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/contacts.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/contacts.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/groups.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/groups.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +44,7 @@
       <recent name="C:\Devel\python_training\data" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.pytest for bdd.group_scenarios.test_delete_group">
+  <component name="RunManager" selected="Python.contact">
     <configuration name="contact" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="python_training" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -176,10 +178,10 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.contact" />
         <item itemvalue="Python tests.pytest for bdd.group_scenarios.test_delete_group" />
         <item itemvalue="Python tests.pytest for bdd.group_scenarios.test_add_new_group" />
         <item itemvalue="Python tests.pytest for test_add_contact.test_add_contact_db" />
-        <item itemvalue="Python.contact" />
         <item itemvalue="Python tests.pytest for test_phones.test_info_on_home_page_db" />
       </list>
     </recent_temporary>
@@ -305,7 +307,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618317880926</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="add requirements.txt">
+      <created>1618318226803</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1618318226804</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -356,7 +365,8 @@
     <MESSAGE value="22. add tests: test_del_contact_from_group and test_add_contact_in_group" />
     <MESSAGE value="21. add test_ifo_on_home_page" />
     <MESSAGE value="21. add requirements.txt" />
-    <option name="LAST_COMMIT_MESSAGE" value="21. add requirements.txt" />
+    <MESSAGE value="add requirements.txt" />
+    <option name="LAST_COMMIT_MESSAGE" value="add requirements.txt" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
