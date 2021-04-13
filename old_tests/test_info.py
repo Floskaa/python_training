@@ -1,9 +1,10 @@
-
 import re
 from random import randrange
 
+
 def clear(s):
     return re.sub("[() -]", "", s)
+
 
 def test_all_info_on_page(app):
     contacts = app.contact.get_contact_list()
