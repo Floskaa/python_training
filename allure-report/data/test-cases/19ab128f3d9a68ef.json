@@ -1,0 +1,211 @@
+{
+  "uid" : "19ab128f3d9a68ef",
+  "name" : "test_add_contact_db[None:lastnameE @sea<M[( oik}U;firstname>GBTHfNF]",
+  "fullName" : "test.test_add_contact#test_add_contact_db[None:lastnameE @sea<M",
+  "historyId" : "18f39ad690bf546df0525a8b36b185a3",
+  "time" : {
+    "start" : 1618480188826,
+    "stop" : 1618480189842,
+    "duration" : 1016
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert [2:Smirnov;Ne...ntact db, ...] == [2:Smirnov;Ne...ntact db, ...]\n  Left contains one more item: None:lastnameE @sea<M[( oik}U;firstname>GBTHfNF\n  Use -v to get the full diff",
+  "statusTrace" : "app = <fixture.application.Application object at 0x042097A8>, db = <fixture.db.DbFixture object at 0x042093A0>, json_contacts = None:lastnameE @sea<M[( oik}U;firstname>GBTHfNF\n\n    def test_add_contact_db(app, db, json_contacts):\n        contact = json_contacts\n        with allure.step(\"Given a contact list\"):\n            old_contacts = db.get_contact_list()\n        with allure.step(\"When I add a contact %s to the list\" % contact):\n            app.contact.create(contact)\n        with allure.step(\"Then the new contact list is equal to the old list with the added contact\"):\n            new_contacts = db.get_contact_list()\n            old_contacts.append(contact)\n>           assert sorted(old_contacts, key=Contact.id_or_max) == sorted(new_contacts, key=Contact.id_or_max)\nE           assert [2:Smirnov;Ne...ntact db, ...] == [2:Smirnov;Ne...ntact db, ...]\nE             Left contains one more item: None:lastnameE @sea<M[( oik}U;firstname>GBTHfNF\nE             Use -v to get the full diff\n\ntest\\test_add_contact.py:15: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "app",
+    "time" : {
+      "start" : 1618480188788,
+      "stop" : 1618480188825,
+      "duration" : 37
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1618480176956,
+      "stop" : 1618480177050,
+      "duration" : 94
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "db",
+    "time" : {
+      "start" : 1618480177051,
+      "stop" : 1618480177060,
+      "duration" : 9
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "stop",
+    "time" : {
+      "start" : 1618480177051,
+      "stop" : 1618480177051,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "AssertionError: assert [2:Smirnov;Ne...ntact db, ...] == [2:Smirnov;Ne...ntact db, ...]\n  Left contains one more item: None:lastnameE @sea<M[( oik}U;firstname>GBTHfNF\n  Use -v to get the full diff",
+    "statusTrace" : "app = <fixture.application.Application object at 0x042097A8>, db = <fixture.db.DbFixture object at 0x042093A0>, json_contacts = None:lastnameE @sea<M[( oik}U;firstname>GBTHfNF\n\n    def test_add_contact_db(app, db, json_contacts):\n        contact = json_contacts\n        with allure.step(\"Given a contact list\"):\n            old_contacts = db.get_contact_list()\n        with allure.step(\"When I add a contact %s to the list\" % contact):\n            app.contact.create(contact)\n        with allure.step(\"Then the new contact list is equal to the old list with the added contact\"):\n            new_contacts = db.get_contact_list()\n            old_contacts.append(contact)\n>           assert sorted(old_contacts, key=Contact.id_or_max) == sorted(new_contacts, key=Contact.id_or_max)\nE           assert [2:Smirnov;Ne...ntact db, ...] == [2:Smirnov;Ne...ntact db, ...]\nE             Left contains one more item: None:lastnameE @sea<M[( oik}U;firstname>GBTHfNF\nE             Use -v to get the full diff\n\ntest\\test_add_contact.py:15: AssertionError",
+    "steps" : [ {
+      "name" : "Given a contact list",
+      "time" : {
+        "start" : 1618480188826,
+        "stop" : 1618480188827,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "When I add a contact None:lastnameE @sea<M[( oik}U;firstname>GBTHfNF to the list",
+      "time" : {
+        "start" : 1618480188827,
+        "stop" : 1618480189840,
+        "duration" : 1013
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Then the new contact list is equal to the old list with the added contact",
+      "time" : {
+        "start" : 1618480189840,
+        "stop" : 1618480189841,
+        "duration" : 1
+      },
+      "status" : "failed",
+      "statusMessage" : "AssertionError: assert [2:Smirnov;Ne...ntact db, ...] == [2:Smirnov;Ne...ntact db, ...]\n  Left contains one more item: None:lastnameE @sea<M[( oik}U;firstname>GBTHfNF\n  Use -v to get the full diff\n",
+      "statusTrace" : "  File \"C:\\Devel\\python_training\\test\\test_add_contact.py\", line 15, in test_add_contact_db\n    assert sorted(old_contacts, key=Contact.id_or_max) == sorted(new_contacts, key=Contact.id_or_max)\n",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 3,
+    "hasContent" : true,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : true
+  },
+  "afterStages" : [ {
+    "name" : "db::fin",
+    "time" : {
+      "start" : 1618480224745,
+      "stop" : 1618480224745,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "stop::fin",
+    "time" : {
+      "start" : 1618480223663,
+      "stop" : 1618480224743,
+      "duration" : 1080
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "test"
+  }, {
+    "name" : "suite",
+    "value" : "test_add_contact"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-HF2A3KNR"
+  }, {
+    "name" : "thread",
+    "value" : "17384-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test.test_add_contact"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "json_contacts",
+    "value" : "None:lastnameE @sea<M[( oik}U;firstname>GBTHfNF"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "19ab128f3d9a68ef.json",
+  "parameterValues" : [ "None:lastnameE @sea<M[( oik}U;firstname>GBTHfNF" ]
+}

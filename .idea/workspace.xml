@@ -1,10 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="33a3b308-de99-4858-8a92-a454bd67a8bd" name="Default Changelist" comment="28. Add Screenshots">
+    <list default="true" id="33a3b308-de99-4858-8a92-a454bd67a8bd" name="Default Changelist" comment="28. fix">
       <change afterPath="$PROJECT_DIR$/bdd/group_scenarios.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/bdd/group_steps.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/bdd/groups.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_add_contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_add_contact.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_add_contact_in_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_add_contact_in_group.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_add_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_add_group.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_contact_info.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_contact_info.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_db_matches_ui.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_db_matches_ui.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_del_contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_del_contact.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_del_contact_from_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_del_contact_from_group.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_del_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_del_group.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_modify_contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_modify_contact.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_modify_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_modify_group.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_phones.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_phones.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,10 +44,11 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyIntegratedToolsModulesConfigurable" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../python_training_mantis" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -43,7 +57,7 @@
       <recent name="C:\Devel\python_training\data" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.pytest in test_add_contact_in_group.py">
+  <component name="RunManager" selected="Python tests.pytest for test_phones.test_phones_on_home_page">
     <configuration name="group" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="python_training" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -65,7 +79,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest for test_phones.test_info_on_home_page_db" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest for test_contact_info.test_all_info_on_page" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="python_training" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -77,11 +91,11 @@
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_parameters" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_phones.test_info_on_home_page_db&quot;" />
+      <option name="_new_target" value="&quot;test_contact_info.test_all_info_on_page&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest in test" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest for test_del_contact_from_group.test_del_contact_from_group" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="python_training" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -93,11 +107,11 @@
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_parameters" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/test&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <option name="_new_target" value="&quot;test_del_contact_from_group.test_del_contact_from_group&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest in test_add_contact_in_group.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest for test_del_group.test_delete_first_group" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="python_training" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -109,11 +123,11 @@
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_parameters" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/test/test_add_contact_in_group.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <option name="_new_target" value="&quot;test_del_group.test_delete_first_group&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest in test_del_contact_from_group.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest for test_modify_contact.test_modify_some_contact" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="python_training" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -125,8 +139,24 @@
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_parameters" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/test/test_del_contact_from_group.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <option name="_new_target" value="&quot;test_modify_contact.test_modify_some_contact&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest for test_phones.test_phones_on_home_page" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="python_training" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_phones.test_phones_on_home_page&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <configuration name="pytest in test_del_group.py" type="tests" factoryName="py.test" nameIsGenerated="true">
@@ -145,38 +175,22 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest in test_phones.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
-      <module name="python_training" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_parameters" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/test/test_phones.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method v="2" />
-    </configuration>
     <list>
       <item itemvalue="Python.group" />
       <item itemvalue="Python tests.pytest in test_del_group.py" />
-      <item itemvalue="Python tests.pytest for test_phones.test_info_on_home_page_db" />
-      <item itemvalue="Python tests.pytest in test_phones.py" />
-      <item itemvalue="Python tests.pytest in test_del_contact_from_group.py" />
-      <item itemvalue="Python tests.pytest in test" />
-      <item itemvalue="Python tests.pytest in test_add_contact_in_group.py" />
+      <item itemvalue="Python tests.pytest for test_contact_info.test_all_info_on_page" />
+      <item itemvalue="Python tests.pytest for test_del_contact_from_group.test_del_contact_from_group" />
+      <item itemvalue="Python tests.pytest for test_del_group.test_delete_first_group" />
+      <item itemvalue="Python tests.pytest for test_modify_contact.test_modify_some_contact" />
+      <item itemvalue="Python tests.pytest for test_phones.test_phones_on_home_page" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.pytest in test_add_contact_in_group.py" />
-        <item itemvalue="Python tests.pytest in test" />
-        <item itemvalue="Python tests.pytest in test_del_contact_from_group.py" />
-        <item itemvalue="Python tests.pytest in test_phones.py" />
-        <item itemvalue="Python tests.pytest for test_phones.test_info_on_home_page_db" />
+        <item itemvalue="Python tests.pytest for test_phones.test_phones_on_home_page" />
+        <item itemvalue="Python tests.pytest for test_modify_contact.test_modify_some_contact" />
+        <item itemvalue="Python tests.pytest for test_del_group.test_delete_first_group" />
+        <item itemvalue="Python tests.pytest for test_del_contact_from_group.test_del_contact_from_group" />
+        <item itemvalue="Python tests.pytest for test_contact_info.test_all_info_on_page" />
       </list>
     </recent_temporary>
   </component>
@@ -350,7 +364,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618335443455</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="28. fix">
+      <created>1618335704245</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1618335704245</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -407,27 +428,7 @@
     <MESSAGE value="update" />
     <MESSAGE value="fix" />
     <MESSAGE value="28. Add Screenshots" />
-    <option name="LAST_COMMIT_MESSAGE" value="28. Add Screenshots" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/test/test_add_group.py</url>
-          <line>1</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/test/test_db_matches_ui.py</url>
-          <line>9</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/test/test_del_contact_from_group.py</url>
-          <line>14</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="28. fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="28. fix" />
   </component>
 </project>

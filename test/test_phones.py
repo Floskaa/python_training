@@ -1,22 +1,28 @@
 import re
 from model.contact import Contact
 # from random import randrange
+import allure
 
 
 def test_info_on_home_page_db(app, db):
-    contact_from_home_page = sorted(app.contact.get_contact_list(), key=Contact.id_or_max)
-    contact_from_db_page = sorted(db.get_contact_list(), key=Contact.id_or_max)
-    for number in range(len(db.get_contact_list())):
-        assert contact_from_home_page[number].firstname == contact_from_db_page[number].firstname
-        assert contact_from_home_page[number].lastname == contact_from_db_page[number].lastname
-        assert contact_from_home_page[number].all_phones == merge_phones_like_on_home_page(contact_from_db_page[number])
-        assert contact_from_home_page[number].all_emails == merge_emails_like_on_home_page(contact_from_db_page[number])
+    with allure.step("Given contact list from DB and UI"):
+        contact_from_home_page = sorted(app.contact.get_contact_list(), key=Contact.id_or_max)
+        contact_from_db_page = sorted(db.get_contact_list(), key=Contact.id_or_max)
+    with allure.step("Then contact info from UI equals contact info from DB"):
+        for number in range(len(db.get_contact_list())):
+            assert contact_from_home_page[number].firstname == contact_from_db_page[number].firstname
+            assert contact_from_home_page[number].lastname == contact_from_db_page[number].lastname
+            assert contact_from_home_page[number].all_phones == merge_phones_like_on_home_page(contact_from_db_page[number])
+            assert contact_from_home_page[number].all_emails == merge_emails_like_on_home_page(contact_from_db_page[number])
 
 
 def test_phones_on_home_page(app):
-    contact_from_home_page = app.contact.get_contact_list()[0]
-    contact_from_edit_page = app.contact.get_contact_info_from_edit_page(0)
-    assert contact_from_home_page.all_phones == merge_phones_like_on_home_page(contact_from_edit_page)
+    with allure.step("Given phones list from home page"):
+        contact_from_home_page = app.contact.get_contact_list()[0]
+    with allure.step("Given phones list from edit page"):
+        contact_from_edit_page = app.contact.get_contact_info_from_edit_page(0)
+    with allure.step("Then phones list from home page equals phones list from edit page"):
+        assert contact_from_home_page.all_phones == merge_phones_like_on_home_page(contact_from_edit_page)
 
 
 # def test_phones_on_contact_view_page(app):

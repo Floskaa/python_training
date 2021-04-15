@@ -3,22 +3,23 @@ from model.group import Group
 from random import randrange
 # from fixture.orm import ORMFixture
 import random
+import allure
 
 
 # orm = ORMFixture(host="127.0.0.1", name="addressbook", user="root", password="")
 
 
 def test_add_contact_in_group(app, orm, db):
-    contacts = db.get_contact_list()
-    groups = db.get_group_list()
-    group = random.choice(groups)
-    if len(db.get_contact_list()) == 0:
-        app.contact(Contact(firstname="test"))
-    if len(orm.get_group_list()) == 0:
-        app.group.create(Group(name="test"))
-
-    if len(orm.get_contacts_not_in_group(group)) == 0:
-        app.contact.create(Contact(firstname="test"))
+    with allure.step("Given non-empty contact and group list from db"):
+        contacts = db.get_contact_list()
+        groups = db.get_group_list()
+        group = random.choice(groups)
+        if len(db.get_contact_list()) == 0:
+            app.contact(Contact(firstname="test"))
+        if len(orm.get_group_list()) == 0:
+            app.group.create(Group(name="test"))
+        if len(orm.get_contacts_not_in_group(group)) == 0:
+            app.contact.create(Contact(firstname="test"))
 
     while True:
         contact_index = randrange(len(contacts))
@@ -27,6 +28,7 @@ def test_add_contact_in_group(app, orm, db):
         group_id = groups[group_index].id
         if contacts[contact_index] not in orm.get_contacts_in_group(groups[group_index]):
             break
-    app.contact.add_contact_to_group(contact_id, group_id)
-
-    assert contacts[contact_index] in orm.get_contacts_in_group(groups[group_index])
+    with allure.step("When I add contacts to the group"):
+        app.contact.add_contact_to_group(contact_id, group_id)
+    with allure.step("Then the old contact list equal new contact list"):
+        assert contacts[contact_index] in orm.get_contacts_in_group(groups[group_index])

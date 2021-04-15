@@ -1,0 +1,81 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "AssertionError: assert [2:Smirnov;Ne...ntact db, ...] == [2:Smirnov;Ne...ntact db, ...]\n  Left contains one more item: None:lastname# 4U)WbaaeO0;firstnameAcr3Gd\n  Use -v to get the full diff",
+      "children" : [ {
+        "name" : "test_add_contact_db[None:lastname# 4U)WbaaeO0;firstnameAcr3Gd]",
+        "uid" : "1dc10e9a92ce679b",
+        "parentUid" : "5540468e1352bf59bc8539e0b53b0a2c",
+        "status" : "failed",
+        "time" : {
+          "start" : 1618480186265,
+          "stop" : 1618480187399,
+          "duration" : 1134
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "None:lastname# 4U)WbaaeO0;firstnameAcr3Gd" ]
+      } ],
+      "uid" : "5540468e1352bf59bc8539e0b53b0a2c"
+    }, {
+      "name" : "AssertionError: assert [2:Smirnov;Ne...ntact db, ...] == [2:Smirnov;Ne...ntact db, ...]\n  Left contains one more item: None:lastnameE @sea<M[( oik}U;firstname>GBTHfNF\n  Use -v to get the full diff",
+      "children" : [ {
+        "name" : "test_add_contact_db[None:lastnameE @sea<M[( oik}U;firstname>GBTHfNF]",
+        "uid" : "19ab128f3d9a68ef",
+        "parentUid" : "22c876aad6b1dff5a1e38beae15f1273",
+        "status" : "failed",
+        "time" : {
+          "start" : 1618480188826,
+          "stop" : 1618480189842,
+          "duration" : 1016
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "None:lastnameE @sea<M[( oik}U;firstname>GBTHfNF" ]
+      } ],
+      "uid" : "22c876aad6b1dff5a1e38beae15f1273"
+    }, {
+      "name" : "AssertionError: assert '+7987654321\\...\\n79048888888' == ''\n  + +7987654321\n  + 7923445445\n  + 72343434444\n  + 79048888888",
+      "children" : [ {
+        "name" : "test_info_on_home_page_db",
+        "uid" : "88b6a6b8f99fca6c",
+        "parentUid" : "db1b62be688f70ab7af7615f7191ee6e",
+        "status" : "failed",
+        "time" : {
+          "start" : 1618480222914,
+          "stop" : 1618480222917,
+          "duration" : 3
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "db1b62be688f70ab7af7615f7191ee6e"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  }, {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "selenium.common.exceptions.NoSuchElementException: Message: Unable to locate element: input[value='62']",
+      "children" : [ {
+        "name" : "test_add_contact_in_group",
+        "uid" : "6201993ed6aca659",
+        "parentUid" : "a77e0de9b6b52d601d3c7c5e97d08fa2",
+        "status" : "broken",
+        "time" : {
+          "start" : 1618480192259,
+          "stop" : 1618480193302,
+          "duration" : 1043
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "a77e0de9b6b52d601d3c7c5e97d08fa2"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ]
+}

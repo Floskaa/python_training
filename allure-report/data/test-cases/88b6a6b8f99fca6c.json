@@ -1,0 +1,193 @@
+{
+  "uid" : "88b6a6b8f99fca6c",
+  "name" : "test_info_on_home_page_db",
+  "fullName" : "test.test_phones#test_info_on_home_page_db",
+  "historyId" : "b59cdcad31a568a56189d06b5eb9dbe5",
+  "time" : {
+    "start" : 1618480222914,
+    "stop" : 1618480222917,
+    "duration" : 3
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert '+7987654321\\...\\n79048888888' == ''\n  + +7987654321\n  + 7923445445\n  + 72343434444\n  + 79048888888",
+  "statusTrace" : "app = <fixture.application.Application object at 0x042097A8>, db = <fixture.db.DbFixture object at 0x042093A0>\n\n    def test_info_on_home_page_db(app, db):\n        with allure.step(\"Given contact list from DB and UI\"):\n            contact_from_home_page = sorted(app.contact.get_contact_list(), key=Contact.id_or_max)\n            contact_from_db_page = sorted(db.get_contact_list(), key=Contact.id_or_max)\n        with allure.step(\"Then contact info from UI equals contact info from DB\"):\n            for number in range(len(db.get_contact_list())):\n                assert contact_from_home_page[number].firstname == contact_from_db_page[number].firstname\n                assert contact_from_home_page[number].lastname == contact_from_db_page[number].lastname\n>               assert contact_from_home_page[number].all_phones == merge_phones_like_on_home_page(contact_from_db_page[number])\nE               AssertionError: assert '+7987654321\\...\\n79048888888' == ''\nE                 + +7987654321\nE                 + 7923445445\nE                 + 72343434444\nE                 + 79048888888\n\ntest\\test_phones.py:15: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1618480176956,
+      "stop" : 1618480177050,
+      "duration" : 94
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "db",
+    "time" : {
+      "start" : 1618480177051,
+      "stop" : 1618480177060,
+      "duration" : 9
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "stop",
+    "time" : {
+      "start" : 1618480177051,
+      "stop" : 1618480177051,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "app",
+    "time" : {
+      "start" : 1618480222888,
+      "stop" : 1618480222913,
+      "duration" : 25
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "AssertionError: assert '+7987654321\\...\\n79048888888' == ''\n  + +7987654321\n  + 7923445445\n  + 72343434444\n  + 79048888888",
+    "statusTrace" : "app = <fixture.application.Application object at 0x042097A8>, db = <fixture.db.DbFixture object at 0x042093A0>\n\n    def test_info_on_home_page_db(app, db):\n        with allure.step(\"Given contact list from DB and UI\"):\n            contact_from_home_page = sorted(app.contact.get_contact_list(), key=Contact.id_or_max)\n            contact_from_db_page = sorted(db.get_contact_list(), key=Contact.id_or_max)\n        with allure.step(\"Then contact info from UI equals contact info from DB\"):\n            for number in range(len(db.get_contact_list())):\n                assert contact_from_home_page[number].firstname == contact_from_db_page[number].firstname\n                assert contact_from_home_page[number].lastname == contact_from_db_page[number].lastname\n>               assert contact_from_home_page[number].all_phones == merge_phones_like_on_home_page(contact_from_db_page[number])\nE               AssertionError: assert '+7987654321\\...\\n79048888888' == ''\nE                 + +7987654321\nE                 + 7923445445\nE                 + 72343434444\nE                 + 79048888888\n\ntest\\test_phones.py:15: AssertionError",
+    "steps" : [ {
+      "name" : "Given contact list from DB and UI",
+      "time" : {
+        "start" : 1618480222914,
+        "stop" : 1618480222915,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Then contact info from UI equals contact info from DB",
+      "time" : {
+        "start" : 1618480222915,
+        "stop" : 1618480222917,
+        "duration" : 2
+      },
+      "status" : "failed",
+      "statusMessage" : "AssertionError: assert '+7987654321\\...\\n79048888888' == ''\n  + +7987654321\n  + 7923445445\n  + 72343434444\n  + 79048888888\n",
+      "statusTrace" : "  File \"C:\\Devel\\python_training\\test\\test_phones.py\", line 15, in test_info_on_home_page_db\n    assert contact_from_home_page[number].all_phones == merge_phones_like_on_home_page(contact_from_db_page[number])\n",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "hasContent" : true,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : true
+  },
+  "afterStages" : [ {
+    "name" : "db::fin",
+    "time" : {
+      "start" : 1618480224745,
+      "stop" : 1618480224745,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "stop::fin",
+    "time" : {
+      "start" : 1618480223663,
+      "stop" : 1618480224743,
+      "duration" : 1080
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "test"
+  }, {
+    "name" : "suite",
+    "value" : "test_phones"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-HF2A3KNR"
+  }, {
+    "name" : "thread",
+    "value" : "17384-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test.test_phones"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "88b6a6b8f99fca6c.json",
+  "parameterValues" : [ ]
+}
